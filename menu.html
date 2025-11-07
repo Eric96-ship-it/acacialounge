@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Acacia Lounge</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">Acacia <span>Lounge</span></a>
+        
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Site Search -->
+        <form class="site-search" onsubmit="return siteSearchSubmit(event)">
+            <input type="text" id="searchInput" placeholder="Search drinks or site..." aria-label="Search">
+            <button type="submit" class="btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+        
+        <!-- Desktop Cart Icon -->
+        <a href="cart.html" class="cart-icon desktop-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </a>
+        
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <!-- Mobile Cart Icon -->
+        <a href="cart.html" class="cart-icon mobile-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </a>
+    </div>
+</header>
+    <!-- Menu Section -->
+    <section class="menu">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Menu</h2>
+                <p>Discover our extensive collection of premium beverages</p>
+            </div>
+            
+            <div class="drink-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="cocktails">Cocktails</button>
+                <button class="filter-btn" data-filter="beers">Beers</button>
+                <button class="filter-btn" data-filter="wines">Wines</button>
+                <button class="filter-btn" data-filter="spirits">Spirits</button>
+                <button class="filter-btn" data-filter="sodas">Sodas</button>
+                <button class="filter-btn" data-filter="mocktails">Mocktails</button>
+            </div>
+            
+            <div class="drink-grid" id="drinkContainer">
+                <!-- Drink items will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Acacia Lounge</h3>
+                    <p>Premium bar experience in the heart of Kenya. Exceptional drinks, exceptional moments.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="menu.html?category=cocktails">Cocktails</a></li>
+                        <li><a href="menu.html?category=beers">Beers</a></li>
+                        <li><a href="menu.html?category=wines">Wines</a></li>
+                        <li><a href="menu.html?category=spirits">Spirits</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Clay City, Nairobi</li>
+                        <li><i class="fas fa-phone"></i> 0721555163</li>
+                        <li><i class="fas fa-envelope"></i> muriukisalesio@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Acacia Lounge. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

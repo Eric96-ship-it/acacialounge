@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acacia Lounge | Premium Bar in Kenya</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   <header>
+    <div class="container header-container">
+        <a href="index.html" class="logo">Acacia <span>Lounge</span></a>
+        
+        <!-- Navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Site Search -->
+        <form class="site-search" onsubmit="return siteSearchSubmit(event)">
+            <input type="text" id="searchInput" placeholder="Search drinks or site..." aria-label="Search">
+            <button type="submit" class="btn">
+                <i class="fas fa-search"></i>
+            </button>
+        </form>
+        
+        <!-- Desktop Cart Icon -->
+        <a href="cart.html" class="cart-icon desktop-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </a>
+        
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <!-- Mobile Cart Icon -->
+        <a href="cart.html" class="cart-icon mobile-cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </a>
+    </div>
+</header>
+</header>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Welcome to Acacia Lounge</h1>
+            <p>Experience the finest selection of drinks in a sophisticated atmosphere</p>
+            <a href="menu.html" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Categories</h2>
+            </div>
+            
+            <div class="category-grid">
+                <a href="menu.html?category=cocktails" class="category-card">
+                    <div class="category-img">
+                        <img src="images/cocktails.jfif" alt="Cocktails" loading="lazy" onerror="this.style.display='none';">
+                    </div>
+                    <div class="category-content">
+                        <h3>Cocktails</h3>
+                        <p>Exquisite mixed drinks crafted by our expert mixologists</p>
+                        <span class="btn">View</span>
+                    </div>
+                </a>
+                
+                <a href="menu.html?category=beers" class="category-card">
+                    <div class="category-img">
+                        <img src="images/beers.jfif" alt="Beers" loading="lazy" onerror="this.style.display='none';">
+                    </div>
+                    <div class="category-content">
+                        <h3>Beers</h3>
+                        <p>Local and international beers, both bottled and on tap</p>
+                        <span class="btn">View</span>
+                    </div>
+                </a>
+                
+                <a href="menu.html?category=wines" class="category-card">
+                    <div class="category-img">
+                        <img src="images/wines.jfif" alt="Wines" loading="lazy" onerror="this.style.display='none';">
+                    </div>
+                    <div class="category-content">
+                        <h3>Wines</h3>
+                        <p>Fine selection of red, white, and sparkling wines</p>
+                        <span class="btn">View</span>
+                    </div>
+                </a>
+                
+                <a href="menu.html?category=spirits" class="category-card">
+                    <div class="category-img">
+                        <img src="images/spirits.jfif" alt="Spirits" loading="lazy" onerror="this.style.display='none';">
+                    </div>
+                    <div class="category-content">
+                        <h3>Spirits</h3>
+                        <p>Premium whiskeys, vodkas, gins, and more</p>
+                        <span class="btn">View</span>
+                    </div>
+                </a>
+                
+                <a href="menu.html?category=sodas" class="category-card">
+                    <div class="category-img">
+                        <img src="images/sodas.jfif" alt="Sodas" loading="lazy" onerror="this.style.display='none';">
+                    </div>
+                    <div class="category-content">
+                        <h3>Sodas & Soft Drinks</h3>
+                        <p>Refreshing non-alcoholic beverages</p>
+                        <span class="btn">View</span>
+                    </div>
+                </a>
+                
+                <a href="menu.html?category=mocktails" class="category-card">
+                    <div class="category-img">
+                        <img src="images/mocktails.jfif" alt="Mocktails" loading="lazy" onerror="this.style.display='none';">
+                    </div>
+                    <div class="category-content">
+                        <h3>Mocktails</h3>
+                        <p>Creative non-alcoholic mixed drinks</p>
+                        <span class="btn">View</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Drinks</h2>
+            </div>
+            
+            <div class="drink-grid">
+                </div>
+            
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="menu.html" class="btn">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Acacia Lounge</h3>
+                    <p>Premium bar experience in the heart of Kenya. Exceptional drinks, exceptional moments.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="menu.html?category=cocktails">Cocktails</a></li>
+                        <li><a href="menu.html?category=beers">Beers</a></li>
+                        <li><a href="menu.html?category=wines">Wines</a></li>
+                        <li><a href="menu.html?category=spirits">Spirits</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Clay City, Nairobi</li>
+                        <li><i class="fas fa-phone"></i> 0721555163</li>
+                        <li><i class="fas fa-envelope"></i> muriukisalesio@gmail.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Acacia Lounge. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Load featured drinks on home page
+        document.addEventListener('DOMContentLoaded', function() {
+            const featuredDrinks = [
+                { id: 1, name: "Acacia Special", category: "cocktails", price: 650, description: "Our signature cocktail with a blend of tropical flavors", image: "images/acacia.jfif" },
+                { id: 31, name: "Tusker Lager", category: "beers", price: 300, description: "Kenya's iconic beer since 1922", image: "images/drinks/beer/tusker.jpg" },
+                { id: 61, name: "Rift Valley Red", category: "wines", price: 1200, description: "Kenyan dry red wine", image: "images/rift.jfif" },
+                { id: 121, name: "Coca-Cola", category: "sodas", price: 120, description: "Classic cola", image: "images/coc.jfif" }
+            ];
+            
+            const drinkGrid = document.querySelector('.drink-grid');
+            
+            featuredDrinks.forEach(drink => {
+                const drinkCard = document.createElement('div');
+                drinkCard.className = 'drink-card';
+                drinkCard.innerHTML = `
+                    <div class="drink-img">
+                        ${drink.image ? 
+                            `<img src="${drink.image}" alt="${drink.name}" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">` : 
+                            ''
+                        }
+                        <div class="drink-icon-fallback" style="${drink.image ? 'display: none;' : ''}">
+                            <i class="fas fa-glass-${getDrinkIcon(drink.category)}"></i>
+                        </div>
+                    </div>
+                    <div class="drink-content">
+                        <h3>${drink.name}</h3>
+                        <div class="drink-price">Ksh ${drink.price}</div>
+                        <p class="drink-desc">${drink.description}</p>
+                        <button class="add-to-cart" data-id="${drink.id}">Add to Cart</button>
+                    </div>
+                `;
+                drinkGrid.appendChild(drinkCard);
+            });
+            
+            // Add event listeners to add to cart buttons
+            document.querySelectorAll('.add-to-cart').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const id = parseInt(e.target.getAttribute('data-id'));
+                    addToCart(id);
+                });
+            });
+            
+            function getDrinkIcon(category) {
+                switch(category) {
+                    case 'cocktails': return 'martini';
+                    case 'beers': return 'beer';
+                    case 'wines': return 'wine-alt';
+                    case 'spirits': return 'whiskey';
+                    case 'sodas': return 'glass-cheers';
+                    case 'mocktails': return 'cocktail';
+                    default: return 'glass';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
